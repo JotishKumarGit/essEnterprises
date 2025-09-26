@@ -22,6 +22,9 @@
     url(../img/keychainproduct.jpg) center center no-repeat;
   background-size: cover;
 } */
+.btn-primary {
+  color: #1320d8;
+}
 
 .breadcrumb-item + .breadcrumb-item::before {
   color: var(--light);

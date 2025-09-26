@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>ESS ENTERPRIES</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <style>
+    .owl-nav-custom {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .owl-nav-custom .nav-btn border border-pill {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #0d6efd;
+      background: #fff;
+      color: #0d6efd;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all .3s ease;
+    }
+
+    .owl-nav-custom .nav-btn border border-pill :hover {
+      background: #0d6efd;
+      color: #fff;
+      box-shadow: 0 6px 18px rgba(13, 110, 253, .25);
+      transform: scale(1.05);
+    }
+
+    .card-img-top {
+      height: 250px;
+      /* Set desired height */
+      width: 100%;
+      /* Full width of the card */
+      object-fit: cover;
+    }
+
+    .card-img-top {
+      height: 250px;
+      /* uniform image height */
+      width: 100%;
+      /* full card width */
+      object-fit: cover;
+      /* crop without distortion */
+    }
+
+    /* Crop and fill image without distortion */
+    .team-item img {
+      height: 250px;
+      /* set uniform height */
+      width: 100%;
+      /* full width of the container */
+      object-fit: cover;
+      /* crop image to fill without stretching */
+    }
+
+    /* Responsive text sizes */
+    .custom-heading {
+      font-size: 1.2rem;
+      /* mobile default */
+    }
+
+    .custom-subheading {
+      font-size: 1.6rem;
+    }
+
+    @media (min-width: 768px) {
+      .custom-heading {
+        font-size: 1.5rem;
+        /* tablet */
+      }
+
+      .custom-subheading {
+        font-size: 2rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .custom-heading {
+        font-size: 1.8rem;
+        /* desktop */
+      }
+
+      .custom-subheading {
+        font-size: 2.5rem;
+      }
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-body .btn border border-pill {
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Header -->
+  <?php include('header.php') ?>
+
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 mb-5">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="img/carpet.jpg" height="600px" alt="Image" style="object-fit: cover" />
+          <div class="carousel-caption d-flex align-items-center">
+            <div class="container">
+              <div class="row align-items-center text-center justify-content-center">
+                <div class="col-10 col-lg-7 text-center text-lg-start">
+                  <h3 class="text-white text-uppercase text-center mb-3 animated slideInDown">
+                    Carpet That Transforms Spaces
+                  </h3>
+                  <h4 class="display-3 text-white mb-4 pb-3 animated text-center slideInDown">
+                    Elegant carpets perfect for every home and space.
+                  </h4>
+                  <div class="justify-content-center text-center">
+                    <a href="" class="btn border text-white border-pill  text-secondary py-3 px-5 animated text-center slideInDown">
+                      Explore Collection<i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="w-100" src="img/woodenfloor.jpg" height="600px" alt="Image" />
+          <div class="carousel-caption d-flex align-items-center">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-10 col-lg-7 text-center text-lg-start">
+                  <h3 class="text-white text-center text-uppercase mb-3 animated slideInDown">
+                    Wooden Flooring
+                  </h3>
+                  <h4 class="display-3 text-center text-white mb-4 pb-3 animated slideInDown">
+                    Premium wooden flooring crafted for lasting style.
+                  </h4>
+                  <div class="justify-content-center text-center">
+                    <a href="" class=" text-white btn border border-pill  text-secondary py-3 px-5 animated slideInDown">
+                      Explore Collection<i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="w-100" src="img/falsefloor.jpg" height="600px" alt="Image" />
+          <div class="carousel-caption d-flex align-items-center">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-10 col-lg-7 text-center text-lg-start">
+                  <h3 class="text-white text-center text-uppercase mb-3 animated slideInDown">
+                    False Flooring
+                  </h3>
+                  <h4 class="display-3 text-center text-white mb-4 pb-3 animated slideInDown">
+                    Smart flooring solutions perfect for modern offices and homes.
+                  </h4>
+                  <div class="justify-content-center text-center">
+                    <a href="" class=" text-white btn border border-pill  text-secondary py-3 px-5 animated slideInDown">
+                      Explore Collection<i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Carousel End -->
+
+  <!-- Service Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Premium Wooden Flooring -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="d-flex py-5 px-4">
+            <i class="fa fa-tree fa-3x text-secondary flex-shrink-0"></i>
+            <div class="ps-4">
+              <h5 class="mb-3">Premium Wooden Flooring</h5>
+              <p>
+                Elegant and durable wooden flooring that brings warmth, style, and timeless appeal to your interiors.
+              </p>
+              <a class="text-secondary border-bottom" href="">
+                Explore Flooring
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- False Ceiling & Carpets -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="d-flex bg-light py-5 px-4">
+            <i class="fa fa-border-style fa-3x text-secondary flex-shrink-0"></i>
+            <div class="ps-4">
+              <h5 class="mb-3">False Ceiling & Carpets</h5>
+              <p>
+                Stylish false ceilings and premium carpets designed to enhance comfort, beauty, and functionality in
+                every space.
+              </p>
+              <a class="text-secondary border-bottom" href="">
+                View Options
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vinyl Flooring Solutions -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="d-flex py-5 px-4">
+            <i class="fa fa-th-large fa-3x text-secondary flex-shrink-0"></i>
+            <div class="ps-4">
+              <h5 class="mb-3">Vinyl Flooring Solutions</h5>
+              <p>
+                Modern and affordable vinyl flooring — durable, stylish, and easy to maintain for homes and offices.
+              </p>
+              <a class="text-secondary border-bottom" href="">
+                Discover Vinyl
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Service End -->
+
+  <!-- About Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Image Section -->
+        <div class="col-lg-6 pt-4" style="min-height: 400px">
+          <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+            <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: contain"
+              alt="Utkarsh Clothing" />
+            <!-- <div
+                class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                style="background: rgba(0, 0, 0, 0.08)"
+              >
+                <h1 class="display-4 text-white mb-0">
+                  10 <span class="fs-4">Years</span>
+                </h1>
+                <h4 class="text-white">Experience</h4>
+              </div> -->
+          </div>
+        </div>
+
+        <!-- Text Section -->
+        <div class="col-lg-6">
+          <h6 class="text-secondary text-uppercase">// About Us //</h6>
+          <h1 class="mb-4">
+            <span class="text-secondary">ESS ENTERPRISES</span> — Experts in Wooden Flooring, False Ceilings, Carpets &
+            Vinyl Flooring.
+
+          </h1>
+          <p class="mb-4">
+            ESS ENTERPRISES has been a trusted name in the interior solutions industry since 1994. With over three
+            decades of expertise, we specialize in the manufacturing, supplying, and exporting of high-quality Wooden
+            Flooring, False Ceilings, Carpets, and Vinyl Flooring.
+
+            Our commitment to quality, innovation, and customer satisfaction has positioned us as one of the most
+            reliable brands in India. Over the years, we have successfully completed numerous projects across
+            residential, commercial, and industrial spaces, transforming interiors with elegance and durability.
+
+            A testament to our excellence, ESS ENTERPRISES has been recognized as the Top Distributor for Armstrong
+            World Industries for 3 consecutive years in India. This prestigious achievement reflects our dedication to
+            delivering world-class products and services.
+
+            Driven by our vision to provide superior flooring and ceiling solutions, we continue to expand our reach
+            globally, ensuring every project we undertake reflects our values of quality, trust, and craftsmanship.
+          </p>
+
+          <div class="row g-4 mb-3 pb-3">
+            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+              <div class="d-flex">
+                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                  style="width: 45px; height: 45px">
+                  <span class="fw-bold text-secondary">01</span>
+                </div>
+                <div class="ps-3">
+                  <h6>Premium Wooden Flooring</h6>
+                  <span>
+                    Elegant and durable wooden flooring solutions that add warmth and sophistication to any space.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+              <div class="d-flex">
+                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                  style="width: 45px; height: 45px">
+                  <span class="fw-bold text-secondary">02</span>
+                </div>
+                <div class="ps-3">
+                  <h6>False Ceiling & Carpets</h6>
+                  <span>
+                    Innovative false ceiling designs and premium carpets crafted for comfort, style, and durability.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+              <div class="d-flex">
+                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                  style="width: 45px; height: 45px">
+                  <span class="fw-bold text-secondary">03</span>
+                </div>
+                <div class="ps-3">
+                  <h6>Vinyl Flooring Solutions</h6>
+                  <span>
+                    Modern, stylish, and easy-to-maintain vinyl flooring designed for both residential and commercial
+                    spaces.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <button href="contact.php" class="btn border border-pill  bg-primary text-white py-3 px-5">
+            Read More<i class="fa fa-arrow-right ms-3"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- Products Section -->
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Our Products</h1>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Card 1: Tender Coconut -->
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card h-100 text-center">
+          <img src="img/vinlycard'.jpg" class="card-img-top img-fluid" alt="Tender Coconut"
+            style="height: 250px; object-fit: cover" />
+          <div class="card-body">
+            <h5 class="card-title">Vinly Flooring</h5>
+            <p class="card-text">Modern Durability</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary enquiry-btn border border-pill " data-product="Tender Coconut">Enquiry</a>
+              <a href="vinly.php" class="btn border border-pill  btn border border-pill -outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Clay Pot -->
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card h-100 text-center">
+          <img src="img/carpetcard.jpg" class="card-img-top img-fluid" alt="Clay Pot"
+            style="height: 250px; object-fit: cover" />
+          <div class="card-body">
+            <h5 class="card-title">Carpets</h5>
+            <p class="card-text">Elegant Comfort</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary enquiry-btn border border-pill " data-product="Clay Pot">Enquiry</a>
+              <a href="carpet.php" class="btn border border-pill  btn border border-pill -outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: God Statue -->
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card h-100 text-center">
+          <img src="img/falsefloor.jpg" class="card-img-top img-fluid" alt="God Statue"
+            style="height: 250px; object-fit: cover" />
+          <div class="card-body">
+            <h5 class="card-title">False Flooring</h5>
+            <p class="card-text">Smart Access</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary enquiry-btn border border-pill " data-product="God Statue">Enquiry</a>
+              <a href="falseflooring.php" class="btn border border-pill  btn border border-pill -outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Responsive image adjustments -->
+  <style>
+    @media (max-width: 576px) {
+      .card-img-top {
+        height: 200px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .card-img-top {
+        height: 220px !important;
+      }
+    }
+  </style>
+  <!-- Products  Section End -->
+
+  <!-- Service Start -->
+  <div class="container-xxl service py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="text-secondary text-uppercase">// Our Services //</h6>
+        <h1 class="mb-5">What We Offer</h1>
+      </div>
+      <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-lg-4">
+          <div class="nav w-100 nav-pills me-4">
+            <!-- Tab 1 -->
+            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill"
+              data-bs-target="#tab-pane-1" type="button">
+              <i class="fa fa-th-large fa-2x me-3"></i>
+              <h4 class="m-0">Vinyl Flooring</h4>
+            </button>
+            <!-- Tab 2 -->
+            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill"
+              data-bs-target="#tab-pane-2" type="button">
+              <i class="fa fa-border-style fa-2x me-3"></i>
+              <h4 class="m-0">Carpets</h4>
+            </button>
+            <!-- Tab 3 -->
+            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill"
+              data-bs-target="#tab-pane-3" type="button">
+              <i class="fa fa-cubes fa-2x me-3"></i>
+              <h4 class="m-0">False Flooring</h4>
+            </button>
+            <!-- Tab 4 -->
+            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill"
+              data-bs-target="#tab-pane-4" type="button">
+              <i class="fa fa-border-all fa-2x me-3"></i>
+              <h4 class="m-0">False Ceiling</h4>
+            </button>
+            <!-- Tab 5 -->
+            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill"
+              data-bs-target="#tab-pane-5" type="button">
+              <i class="fa fa-tree fa-2x me-3"></i>
+              <h4 class="m-0">Wooden Flooring</h4>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="tab-content w-100">
+
+            <!-- Tab 1: Vinyl Flooring -->
+            <div class="tab-pane fade show active" id="tab-pane-1">
+              <div class="row g-4">
+                <div class="col-md-6" style="min-height: 350px">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/vinlyflooringservice.jpg"
+                      style="object-fit: cover" alt="Vinyl Flooring" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">Vinyl Flooring</h3>
+                  <p class="mb-4">
+                    Durable, stylish, and cost-effective vinyl flooring — perfect for modern homes and commercial
+                    spaces.
+                  </p>
+                  <p><i class="fa fa-check text-success me-3"></i>Water-Resistant</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Easy to Maintain</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Available in Multiple Designs</p>
+                  <a href="contact.php" class="btn border border-pill  text-secondary py-3 px-5 mt-3">
+                    Read More<i class="fa fa-arrow-right ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Carpets -->
+            <div class="tab-pane fade" id="tab-pane-2">
+              <div class="row g-4">
+                <div class="col-md-6" style="min-height: 350px">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/carpetservice.jpg"
+                      style="object-fit: cover" alt="Carpets" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">Carpets</h3>
+                  <p class="mb-4">
+                    Elegant and comfortable carpets that add luxury, warmth, and style to any interior.
+                  </p>
+                  <p><i class="fa fa-check text-success me-3"></i>Soft & Durable</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Variety of Patterns</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Perfect for Homes & Offices</p>
+                  <a href="contact.php" class="btn border border-pill  text-secondary py-3 px-5 mt-3">
+                    Read More<i class="fa fa-arrow-right ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: False Flooring -->
+            <div class="tab-pane fade" id="tab-pane-3">
+              <div class="row g-4">
+                <div class="col-md-6" style="min-height: 350px">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/falsefloorcard.jpg"
+                      style="object-fit: cover" alt="False Flooring" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">False Flooring</h3>
+                  <p class="mb-4">
+                    Smart and functional false flooring solutions designed for easy access and modern infrastructure.
+                  </p>
+                  <p><i class="fa fa-check text-success me-3"></i>Strong & Reliable</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Convenient Maintenance Access</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Ideal for Offices & IT Spaces</p>
+                  <a href="contact.php" class="btn border border-pill  text-secondary py-3 px-5 mt-3">
+                    Read More<i class="fa fa-arrow-right ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 4: False Ceiling -->
+            <div class="tab-pane fade" id="tab-pane-4">
+              <div class="row g-4">
+                <div class="col-md-6" style="min-height: 350px">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/falseceiling.jpg"
+                      style="object-fit: cover" alt="False Ceiling" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">False Ceiling</h3>
+                  <p class="mb-4">
+                    Stylish and modern false ceiling designs that enhance aesthetics, insulation, and lighting.
+                  </p>
+                  <p><i class="fa fa-check text-success me-3"></i>Acoustic & Thermal Benefits</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Wide Design Choices</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Perfect for Homes & Offices</p>
+                  <a href="contact.php" class="btn border border-pill  text-secondary py-3 px-5 mt-3">
+                    Read More<i class="fa fa-arrow-right ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 5: Wooden Flooring -->
+            <div class="tab-pane fade" id="tab-pane-5">
+              <div class="row g-4">
+                <div class="col-md-6" style="min-height: 350px">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/woodenfloor.jpg"
+                      style="object-fit: cover" alt="Wooden Flooring" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">Wooden Flooring</h3>
+                  <p class="mb-4">
+                    Premium wooden flooring crafted for timeless elegance, durability, and natural warmth.
+                  </p>
+                  <p><i class="fa fa-check text-success me-3"></i>Elegant & Durable</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Easy to Maintain</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Enhances Interiors</p>
+                  <a href="contact.php" class="btn border border-pill  text-secondary py-3 px-5 mt-3">
+                    Read More<i class="fa fa-arrow-right ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Service End -->
+
+  <!-- collection -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="text-secondary text-uppercase">// Our Collection //</h6>
+        <h1>Explore Our Premium Solutions</h1>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/woodenfloor.jpg" class="card-img-top" alt="Wooden Flooring"
+              style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">Wooden Flooring</h5>
+              <p>Elegant and durable wooden flooring that adds warmth, style, and timeless beauty to any space.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/falseceiling.jpg" class="card-img-top" alt="False Ceiling"
+              style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">False Ceiling</h5>
+              <p>Stylish and functional false ceilings designed to enhance aesthetics while improving insulation.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/carpetcard.jpg" class="card-img-top" alt="Carpets"
+              style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">Carpets</h5>
+              <p>Premium carpets that combine comfort and elegance to create a luxurious flooring experience.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/vinlycard'.jpg" class="card-img-top" alt="Vinyl Flooring"
+              style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">Vinyl Flooring</h5>
+              <p>Durable and versatile vinyl flooring that offers modern style with long-lasting performance.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/falsefloor.jpg" class="card-img-top" alt="False Flooring"
+              style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">False Flooring</h5>
+              <p>Smart access false flooring solutions designed for modern offices and data centers.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/vinlyflooringservice.jpg" class="card-img-top" alt="Interior Solutions"
+              style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">Vinly Flooring</h5>
+              <p>Complete interior solutions tailored to transform spaces with style, comfort, and functionality.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Collection end  -->
+
+  <!-- jQuery and Owl Carousel -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+
+  <script>
+    $(function() {
+      var $owl = $('.testimonial-carousel');
+
+      $owl.owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 800,
+        dots: false,
+        nav: false
+      });
+
+      // Custom nav
+      $('.owl-prev-custom').on('click', function() {
+        $owl.trigger('prev.owl.carousel');
+      });
+      $('.owl-next-custom').on('click', function() {
+        $owl.trigger('next.owl.carousel');
+      });
+    });
+  </script>
+  <!-- Testimonial End -->
+
+  <!-- Contact Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="text-secondary text-uppercase">// Contact Us //</h6>
+        <h1 class="mb-5">Contact For Any Query</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="row gy-4">
+            <div class="col-md-4">
+              <div class="bg-light d-flex flex-column justify-content-center p-4">
+                <h5 class="text-uppercase">// Customized Orders //</h5>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-light d-flex flex-column justify-content-center p-4">
+                <h5 class="text-uppercase">// Product Inquiries //</h5>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-light d-flex flex-column justify-content-center p-4">
+                <h5 class="text-uppercase">// After-Sales Support //</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+          <iframe class="position-relative rounded w-100 h-100"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28050.833890166876!2d77.29319042882383!3d28.498988162847855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sG%2FF%20D%20-19%20Gali%20Number%20Molarband%20%2CNew%20Delhi%20-44!5e0!3m2!1sen!2sin!4v1754907088221!5m2!1sen!2sin"
+            frameborder="0" style="min-height: 350px; border: 0" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <div class="col-md-6">
+          <div class="wow fadeInUp" data-wow-delay="0.2s">
+            <p class="mb-4">
+              We'd love to hear from you! Whether you're looking for custom
+              carpet solutions, product details, or need support, simply reach
+              out through the form below. Our team will respond promptly to
+              assist you.
+            </p>
+            <form onsubmit="sendToWhatsApp(); return false;">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" />
+                    <label for="name">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" />
+                    <label for="email">Your Email</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message"
+                      style="height: 100px"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn border border-pill  text-secondary w-100 py-3" type="submit">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact End -->
+
+  <!-- footer -->
+  <?php include('footer.php') ?>
