@@ -51,6 +51,7 @@
     }
 </script>
 <!-- JavaScript to Handle enquiryForm WhatsApp Redirect -->
+
 <script>
     document.getElementById("enquiryForm").addEventListener("submit", function(e) {
         e.preventDefault();
